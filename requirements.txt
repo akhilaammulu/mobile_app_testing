@@ -1,0 +1,6 @@
+Appium-Python-Client
+selenium
+requests
+pandas
+pytest
+allure-pytest

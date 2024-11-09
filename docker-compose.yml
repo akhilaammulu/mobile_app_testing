@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  appium:
+    image: appium/appium
+    ports:
+      - "4723:4723"
+    volumes:
+      - /dev:/dev
+    environment:
+      - APPIUM_NODE_CONFIG=/usr/local/lib/node_modules/appium/appium/appium-config.json
+    command: appium
+  selenium:
+    image: selenium/standalone-chrome
+    ports:
+      - "4444:4444"
